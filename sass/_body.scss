@@ -1,0 +1,122 @@
+
+.container_main {
+	margin-top: $small;
+
+}
+
+.titulo_contacto {
+	font-size: 30px;
+	background-color: $secondary;
+	align-items: center;
+	color: $primary;
+}
+
+.texto_contacto {
+	font-size: 20px;
+	font-style: normal;
+}
+
+.btn {
+	background-color: $primary;
+	color: $secondary;
+	border-color: $primary;
+
+	&:hover {
+		background-color: $secondary;
+		color: $text-color;
+		border-color: $primary;
+	}
+}
+
+
+.card_zoom {
+	overflow: hidden;
+	box-shadow: 0px 0px 5px 1px black;
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease;
+	margin-right: 1rem !important;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+
+
+.card-body {
+	background-color: $primary;
+	color: $secondary;
+	font-size: 20px;
+}
+
+
+.card-text {
+	font-weight: bold !important;
+	background-color: $primary  !important;
+	color: $secondary  !important;
+}
+
+#card-body {
+	background-color: $secondary;
+	color: $text-color;
+}
+
+
+
+.media {
+	margin: 2rem;
+}
+
+.titulo_ins {
+	text-align: center;
+	font-size: 30px;
+	background-color: $primary;
+	color: $secondary;
+}
+
+.img {
+	align-items: center;
+}
+
+.menu {
+	background-color: $primary;
+
+	a {
+		border-bottom: 1px solid $secondary;
+	}
+}
+
+
+.form-control,.input-group-text{
+	border: 1px solid black;
+}
+
+
+/*pasar a sass*/
+h3{
+	display: inline-block;
+	color: $primary;
+	position: relative;
+	font-family: $fuente-principal;
+}
+
+h3::after,h3::before{
+	content: "";
+	position:absolute;
+	width: 120px;
+	height: 3px;
+	background-color: currentColor;
+	text-align: center;
+	top:0.8em;
+	transition: all 0.4s ease-in;
+}
+h3:hover::before,h3:hover::after{
+	transform: scale(1.2);
+}
+h3::before{
+	left: -140px;
+}
+
+h3::after{
+	right: -140px;
+}
