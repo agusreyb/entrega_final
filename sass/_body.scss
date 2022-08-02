@@ -164,6 +164,7 @@ h3::after{
 	flex-direction: column;
 	flex-basis: auto;
 	margin: 10px;
+
 }
 .article-image {
 	background: #eee;
@@ -186,6 +187,7 @@ h3::after{
 .article-image.is-16by9 {
 	padding-top: 56.25%;
 }
+
 .article-body {
 	display: flex;
 	flex: 1;
